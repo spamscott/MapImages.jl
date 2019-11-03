@@ -1,7 +1,7 @@
 .DS_Store
-/Manifest.toml
-/dev/
-/docs/build/
-/docs/site/
+Manifest.toml
+dev/
+docs/build/
+docs/site/
 
 *.swp
