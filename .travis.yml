@@ -12,7 +12,9 @@ jobs:
       os: linux
       script:
         - julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd()));
+                                               Pkg.add("Documenter");
                                                Pkg.add("https://github.com/scottstanie/Sario.jl");
+                                               Pkg.add("https://github.com/scottstanie/MapImages.jl");
                                                Pkg.instantiate()'
         - julia --project=docs/ docs/make.jl
       after_success: skip
